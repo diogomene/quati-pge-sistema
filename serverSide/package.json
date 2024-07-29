@@ -1,12 +1,14 @@
 {
   "name": "quati-pge-serverside",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Diogo Menezes",
+  "license": "MIT",
   "description": "",
   "devDependencies": {
     "@types/express": "^4.17.21",
