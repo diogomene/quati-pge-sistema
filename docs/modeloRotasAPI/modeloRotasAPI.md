@@ -38,6 +38,9 @@ Abaixo serão encontradas as rotas, os métodos HTTP 2.0 suportados por cada uma
 
 - ordenacaoDataPrescricao - opcional, pode ser “ASC“ ou “DESC”, referente a ordenação por data de prescricao.
 - statusProcesso - opcional, pode ser “A_PRESCREVER” ou “PRESCRITO”, referente ao status atual do processo.
+- numeroProcesso - opcional, refere-se ao número do processo
+- dataInicialPrescricao - opcional, refere-se a uma data de início de intervalo de prescrição
+- dataFinalPrescricao - opcional, refere-se a uma data de fim de intervalo de prescrição
 
 ## /movimentacao/[id]
 
