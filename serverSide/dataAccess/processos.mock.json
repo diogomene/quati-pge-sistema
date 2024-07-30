@@ -1,0 +1,343 @@
+[
+    {
+      "id": 1,
+      "numeroProcesso": 123456,
+      "status": "EM_EXECUCAO",
+      "dataDistribuicao": "2023-01-15",
+      "dataPrescricao": "2025-01-15",
+      "valor": 10000,
+      "executado": {
+        "id": 1,
+        "nome": "João Silva"
+      },
+      "juiz": {
+        "id": 1,
+        "nome": "Juiz A"
+      },
+      "movimentacao": []
+    },
+    {
+      "id": 2,
+      "numeroProcesso": 123457,
+      "status": "EM_EXECUCAO",
+      "dataDistribuicao": "2023-02-15",
+      "dataPrescricao": "2025-02-15",
+      "valor": 20000,
+      "executado": {
+        "id": 2,
+        "nome": "Maria Oliveira"
+      },
+      "juiz": {
+        "id": 2,
+        "nome": "Juiz B"
+      },
+      "movimentacao": []
+    },
+    {
+      "id": 3,
+      "numeroProcesso": 123458,
+      "status": "PRESCRITO_RECONHECIDO",
+      "dataDistribuicao": "2022-03-20",
+      "dataPrescricao": "2024-03-20",
+      "valor": 15000,
+      "executado": {
+        "id": 3,
+        "nome": "Carlos Souza"
+      },
+      "juiz": {
+        "id": 3,
+        "nome": "Juiz C"
+      },
+      "movimentacao": []
+    },
+    {
+      "id": 4,
+      "numeroProcesso": 123459,
+      "status": "EM_EXECUCAO",
+      "dataDistribuicao": "2023-04-10",
+      "dataPrescricao": "2025-04-10",
+      "valor": 5000,
+      "executado": {
+        "id": 4,
+        "nome": "Ana Costa"
+      },
+      "juiz": {
+        "id": 4,
+        "nome": "Juiz D"
+      },
+      "movimentacao": []
+    },
+    {
+      "id": 5,
+      "numeroProcesso": 123460,
+      "status": "EM_EXECUCAO",
+      "dataDistribuicao": "2023-05-05",
+      "dataPrescricao": "2025-05-05",
+      "valor": 12000,
+      "executado": {
+        "id": 5,
+        "nome": "Pedro Santos"
+      },
+      "juiz": {
+        "id": 5,
+        "nome": "Juiz E"
+      },
+      "movimentacao": []
+    },
+    {
+      "id": 6,
+      "numeroProcesso": 123461,
+      "status": "PRESTES_A_PRESCREVER",
+      "dataDistribuicao": "2021-06-15",
+      "dataPrescricao": "2023-06-15",
+      "valor": 30000,
+      "executado": {
+        "id": 6,
+        "nome": "Clara Lima"
+      },
+      "juiz": {
+        "id": 6,
+        "nome": "Juiz F"
+      },
+      "movimentacao": []
+    },
+    {
+      "id": 7,
+      "numeroProcesso": 123462,
+      "status": "EM_EXECUCAO",
+      "dataDistribuicao": "2023-07-20",
+      "dataPrescricao": "2025-07-20",
+      "valor": 8000,
+      "executado": {
+        "id": 7,
+        "nome": "Fernando Almeida"
+      },
+      "juiz": {
+        "id": 7,
+        "nome": "Juiz G"
+      },
+      "movimentacao": []
+    },
+    {
+      "id": 8,
+      "numeroProcesso": 123463,
+      "status": "EM_EXECUCAO",
+      "dataDistribuicao": "2023-08-25",
+      "dataPrescricao": "2025-08-25",
+      "valor": 25000,
+      "executado": {
+        "id": 8,
+        "nome": "Renata Mendes"
+      },
+      "juiz": {
+        "id": 8,
+        "nome": "Juiz H"
+      },
+      "movimentacao": []
+    },
+    {
+      "id": 9,
+      "numeroProcesso": 123464,
+      "status": "PRESTES_A_PRESCREVER",
+      "dataDistribuicao": "2022-09-30",
+      "dataPrescricao": "2024-09-30",
+      "valor": 18000,
+      "executado": {
+        "id": 9,
+        "nome": "Gustavo Ferreira"
+      },
+      "juiz": {
+        "id": 9,
+        "nome": "Juiz I"
+      },
+      "movimentacao": []
+    },
+    {
+      "id": 10,
+      "numeroProcesso": 123465,
+      "status": "EM_EXECUCAO",
+      "dataDistribuicao": "2023-10-05",
+      "dataPrescricao": "2025-10-05",
+      "valor": 22000,
+      "executado": {
+        "id": 10,
+        "nome": "Juliana Martins"
+      },
+      "juiz": {
+        "id": 10,
+        "nome": "Juiz J"
+      },
+      "movimentacao": []
+    },
+    {
+      "id": 11,
+      "numeroProcesso": 123466,
+      "status": "EM_EXECUCAO",
+      "dataDistribuicao": "2023-11-10",
+      "dataPrescricao": "2025-11-10",
+      "valor": 16000,
+      "executado": {
+        "id": 11,
+        "nome": "Lucas Pereira"
+      },
+      "juiz": {
+        "id": 11,
+        "nome": "Juiz K"
+      },
+      "movimentacao": []
+    },
+    {
+      "id": 12,
+      "numeroProcesso": 123467,
+      "status": "PRESTES_A_PRESCREVER",
+      "dataDistribuicao": "2022-12-15",
+      "dataPrescricao": "2024-12-15",
+      "valor": 14000,
+      "executado": {
+        "id": 12,
+        "nome": "Larissa Barbosa"
+      },
+      "juiz": {
+        "id": 12,
+        "nome": "Juiz L"
+      },
+      "movimentacao": []
+    },
+    {
+      "id": 13,
+      "numeroProcesso": 123468,
+      "status": "EM_EXECUCAO",
+      "dataDistribuicao": "2023-01-20",
+      "dataPrescricao": "2025-01-20",
+      "valor": 26000,
+      "executado": {
+        "id": 13,
+        "nome": "André Moreira"
+      },
+      "juiz": {
+        "id": 13,
+        "nome": "Juiz M"
+      },
+      "movimentacao": []
+    },
+    {
+      "id": 14,
+      "numeroProcesso": 123469,
+      "status": "EM_EXECUCAO",
+      "dataDistribuicao": "2023-02-25",
+      "dataPrescricao": "2025-02-25",
+      "valor": 7000,
+      "executado": {
+        "id": 14,
+        "nome": "Carla Pinto"
+      },
+      "juiz": {
+        "id": 14,
+        "nome": "Juiz N"
+      },
+      "movimentacao": []
+    },
+    {
+      "id": 15,
+      "numeroProcesso": 123470,
+      "status": "PRESCRITO_NAO_RECONHECIDO",
+      "dataDistribuicao": "2021-03-30",
+      "dataPrescricao": "2023-03-30",
+      "valor": 11000,
+      "executado": {
+        "id": 15,
+        "nome": "Bruno Rocha"
+      },
+      "juiz": {
+        "id": 15,
+        "nome": "Juiz O"
+      },
+      "movimentacao": []
+    },
+    {
+      "id": 16,
+      "numeroProcesso": 123471,
+      "status": "EM_EXECUCAO",
+      "dataDistribuicao": "2023-04-10",
+      "dataPrescricao": "2025-04-10",
+      "valor": 21000,
+      "executado": {
+        "id": 16,
+        "nome": "Sofia Ribeiro"
+      },
+      "juiz": {
+        "id": 16,
+        "nome": "Juiz P"
+      },
+      "movimentacao": []
+    },
+    {
+      "id": 17,
+      "numeroProcesso": 123472,
+      "status": "EM_EXECUCAO",
+      "dataDistribuicao": "2023-05-15",
+      "dataPrescricao": "2025-05-15",
+      "valor": 13000,
+      "executado": {
+        "id": 17,
+        "nome": "Rafael Costa"
+      },
+      "juiz": {
+        "id": 17,
+        "nome": "Juiz Q"
+      },
+      "movimentacao": []
+    },
+    {
+      "id": 18,
+      "numeroProcesso": 123473,
+      "status": "PRESTES_A_PRESCREVER",
+      "dataDistribuicao": "2022-06-20",
+      "dataPrescricao": "2024-06-20",
+      "valor": 9000,
+      "executado": {
+        "id": 18,
+        "nome": "Eduarda Gomes"
+      },
+      "juiz": {
+        "id": 18,
+        "nome": "Juiz R"
+      },
+      "movimentacao": []
+    },
+    {
+      "id": 19,
+      "numeroProcesso": 123474,
+      "status": "EM_EXECUCAO",
+      "dataDistribuicao": "2023-07-25",
+      "dataPrescricao": "2025-07-25",
+      "valor": 19000,
+      "executado": {
+        "id": 19,
+        "nome": "Vitor Lima"
+      },
+      "juiz": {
+        "id": 19,
+        "nome": "Juiz S"
+      },
+      "movimentacao": []
+    },
+    {
+      "id": 20,
+      "numeroProcesso": 123475,
+      "status": "EM_EXECUCAO",
+      "dataDistribuicao": "2023-08-30",
+      "dataPrescricao": "2025-08-30",
+      "valor": 17000,
+      "executado": {
+        "id": 20,
+        "nome": "Mariana Almeida"
+      },
+      "juiz": {
+        "id": 20,
+        "nome": "Juiz T"
+      },
+      "movimentacao": []
+    }
+  ]
+  
