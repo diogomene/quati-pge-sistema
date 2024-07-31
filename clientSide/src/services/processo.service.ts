@@ -38,6 +38,13 @@ async function getAll(query: QueryPesquisaProcesso) : Promise<ProcessoDTO[]>{
     try{
         const res = await fetch('http://127.0.0.1:3000/processo' + (query ? '?' + query : '' ));
         const data = await res.json();
+        data.forEach((processo: ProcessoDTO) => {
+            processo.dataDistribuicao = new Date(processo.dataDistribuicao);
+            processo.dataPrescricao = new Date(processo.dataPrescricao);
+            if(processo.status in STATUS_PROCESSO){
+                processo.status = STATUS_PROCESSO[processo.status as unknown as keyof typeof STATUS_PROCESSO];
+            }
+        });
         return data;
     }
     catch(err){

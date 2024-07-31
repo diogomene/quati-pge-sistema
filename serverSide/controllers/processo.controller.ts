@@ -36,7 +36,7 @@ const getProcessos = async (req: Request, res: Response) => {
     ordanacaoDataPrescricao: ordanacaoDataPrescricao as "ASC" | "DESC",
   };
 
-  res.status(200).send(processoUseCases.getProcessos(filtro, ordenacao));
+  res.status(200).json(processoUseCases.getProcessos(filtro, ordenacao));
 };
 
 const getProcessoById = async (req: Request, res: Response) => {
