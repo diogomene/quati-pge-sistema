@@ -57,10 +57,10 @@ class ProcessoDAO {
     return this.processos.find((processo) => processo.id === id);
   }
 
-  public getProcessoByNumero(numero: number): Processo | undefined {
-    return this.processos.find(
+  private getProcessoByNumero(numero: number): Processo[] {
+    return (this.processos.filter(
       (processo) => processo.numeroProcesso === numero
-    );
+    )||[]);
   }
 
   public getProcessosByFiltroOrdenacao(
@@ -68,6 +68,10 @@ class ProcessoDAO {
     ordenacao?: ProcessoOrdenacao
   ): Processo[] {
     let filteredProcessos = this.processos;
+
+    if(filtro.numeroProcesso){
+      filteredProcessos = this.getProcessoByNumero(filtro.numeroProcesso);
+    }
 
     if (filtro.statusProcesso) {
       filteredProcessos = this.getProcessosByStatus(
