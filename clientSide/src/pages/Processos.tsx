@@ -31,7 +31,7 @@ export function Processos() {
       statusProcesso,
     });
     getAll(valQuery).then((res) => {
-      setProcessos(res as ProcessoDTO[]);
+      setProcessos(res);
     });
   }, [numeroProcesso, ordenacao, statusProcesso, dataInicial, dataFinal]);
   return (

@@ -9,6 +9,10 @@ import { useState } from "react";
 interface ProcessoTableProps {
   processos: ProcessoDTO[];
 }
+
+const locale = 'pt-BR'; // Brazilian Portuguese locale
+const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: '2-digit', day: '2-digit', timeZone: 'UTC' };
+
 export function ProcessosTable({processos}: ProcessoTableProps) {
     const [idProcessoAberto, setIdProcessoAberto] = useState<number | undefined>(undefined);
     return(
@@ -42,10 +46,11 @@ export function ProcessosTable({processos}: ProcessoTableProps) {
                       ))}
                     </div>
                   </TableCell>
-                  <TableCell>{new Date(processo.dataDistribuicao).toLocaleDateString()}</TableCell>
-                  <TableCell>{new Date(processo.dataPrescricao).toLocaleDateString()}</TableCell>
+                  <TableCell>{(processo.dataDistribuicao).toLocaleDateString(locale, options)}</TableCell>
+                  <TableCell>{(processo.dataPrescricao).toLocaleDateString(locale, options)}</TableCell>
                   <TableCell>
                     <Button variant={"ghost"} size={"icon"} onClick={()=>{
+                      console.log(processo)
                       if(idProcessoAberto === processo.id){
                         setIdProcessoAberto(undefined)
                         return
