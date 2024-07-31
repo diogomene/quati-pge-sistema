@@ -28,7 +28,6 @@ export function ProcessosTable({processos}: ProcessoTableProps) {
         <TableBody>
           {
             processos.map((processo) => (
-              <>
                 <TableRow key={processo.numeroProcesso}>
                   <TableCell>{processo.numeroProcesso}</TableCell>
                   <TableCell>
@@ -43,8 +42,8 @@ export function ProcessosTable({processos}: ProcessoTableProps) {
                       ))}
                     </div>
                   </TableCell>
-                  <TableCell>{processo.dataDistribuicao.toLocaleDateString()}</TableCell>
-                  <TableCell>{processo.dataPrescricao.toLocaleDateString()}</TableCell>
+                  <TableCell>{new Date(processo.dataDistribuicao).toLocaleDateString()}</TableCell>
+                  <TableCell>{new Date(processo.dataPrescricao).toLocaleDateString()}</TableCell>
                   <TableCell>
                     <Button variant={"ghost"} size={"icon"} onClick={()=>{
                       if(idProcessoAberto === processo.id){
@@ -58,7 +57,6 @@ export function ProcessosTable({processos}: ProcessoTableProps) {
                     </Button>
                   </TableCell>
                 </TableRow>
-              </>
             ))
           } 
         </TableBody>
