@@ -1,3 +1,7 @@
+export interface UsuarioDTO{
+    nomeUsuario: string
+}
+
 class Usuario{
     id: number
     nomeUsuario: string
