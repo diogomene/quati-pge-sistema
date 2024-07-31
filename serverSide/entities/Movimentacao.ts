@@ -1,4 +1,4 @@
-import Usuario from "./Usuario"
+import Usuario, { UsuarioDTO } from "./Usuario"
 
 enum TIPO_MOVIMENTACAO{
     CITACAO_EXECUTADO = "Citação executado",
@@ -12,7 +12,7 @@ class Movimentacao{
     data: Date
     tipo: TIPO_MOVIMENTACAO
     descricao: string
-    usuario: Usuario
+    usuario: UsuarioDTO
 
     constructor(id:number, date: Date, tipo: TIPO_MOVIMENTACAO, descricao: string, usuario: Usuario){
         this.id = id
