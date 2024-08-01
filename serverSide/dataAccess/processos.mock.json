@@ -14,7 +14,26 @@
         "id": 1,
         "nome": "Juiz A"
       },
-      "movimentacao": []
+      "movimentacao": [
+        {
+          "id": 1,
+          "data": "2023-01-20",
+          "tipo": "CITACAO_EXECUTADO",
+          "descricao": "Petição Inicial"
+        },
+        {
+          "id": 2,
+          "data": "2023-02-10",
+          "tipo": "PEDIDO_PENHORA",
+          "descricao": "Contestação"
+        },
+        {
+          "id": 3,
+          "data": "2023-02-20",
+          "tipo": "PEDIDO_PENHORA",
+          "descricao": "Contestação"
+        }
+      ]
     },
     {
       "id": 2,
