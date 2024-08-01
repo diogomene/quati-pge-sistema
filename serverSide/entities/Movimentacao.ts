@@ -12,9 +12,9 @@ class Movimentacao{
     data: Date
     tipo: TIPO_MOVIMENTACAO
     descricao: string
-    usuario: UsuarioDTO
+    usuario?: UsuarioDTO
 
-    constructor(id:number, date: Date, tipo: TIPO_MOVIMENTACAO, descricao: string, usuario: Usuario){
+    constructor(id:number, date: Date, tipo: TIPO_MOVIMENTACAO, descricao: string, usuario?: Usuario){
         this.id = id
         this.data = date
         this.tipo = tipo
