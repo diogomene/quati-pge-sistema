@@ -26,7 +26,7 @@ Abaixo serão encontradas as rotas, os métodos HTTP 2.0 suportados por cada uma
 - dataInicialPrescricao - opcional, refere-se a uma data de início de intervalo de prescrição
 - dataFinalPrescricao - opcional, refere-se a uma data de fim de intervalo de prescrição
 
-## /login
+## /login [Não implementado]
 
 **Métodos HTTP**: POST
 
