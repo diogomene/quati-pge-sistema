@@ -1,3 +1,4 @@
+import { Movimentacao, TIPO_MOVIMENTACAO } from "@/entities/Movimentacao";
 import { Processo, STATUS_PROCESSO } from "@/entities/Processo";
 import { ProcessoDTO } from "@/utils/Processo.dto";
 import { TipoOrdenacao } from "@/utils/TipoOrdenacao";
@@ -57,6 +58,17 @@ async function getById(id:number) : Promise<Processo|undefined>{
     try{
         const res = await fetch(`http://127.0.0.1:3000/processo/${id}`);
         const data = await res.json();
+        data.dataDistribuicao = new Date(data.dataDistribuicao);
+        data.dataPrescricao = new Date(data.dataPrescricao);
+        if(data.status in STATUS_PROCESSO){
+            data.status = STATUS_PROCESSO[data.status as unknown as keyof typeof STATUS_PROCESSO];
+        }
+        data.movimentacao.forEach((movimentacao: Movimentacao) => {
+            if(movimentacao.tipo in TIPO_MOVIMENTACAO){
+                movimentacao.tipo = TIPO_MOVIMENTACAO[movimentacao.tipo as unknown as keyof typeof TIPO_MOVIMENTACAO];
+            }
+            movimentacao.data = new Date(movimentacao.data);
+        });
         return data;
     }
     catch(err){

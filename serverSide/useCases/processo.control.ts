@@ -25,7 +25,7 @@ function getProcessoById(id: number) {
     if(!resProcessos){
         return undefined
     }
-    return new ProcessoDTO(resProcessos);
+    return resProcessos
 }
 
 export { ProcessoFiltro, ProcessoOrdenacao, getProcessos, getProcessoById };

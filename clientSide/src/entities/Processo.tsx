@@ -17,7 +17,7 @@ export interface Processo {
   dataDistribuicao: Date;
   dataPrescricao: Date;
   valor: number;
-  executado: Executado;
+  executado: Executado[];
   juiz: Juiz;
   movimentacao: Movimentacao[];
 }

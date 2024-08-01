@@ -1,4 +1,4 @@
-import { Usuario } from "./Usuario"
+import { UsuarioDTO } from "./Usuario"
 
 enum TIPO_MOVIMENTACAO{
     CITACAO_EXECUTADO = "Citação executado",
@@ -12,7 +12,7 @@ export interface Movimentacao{
     data: Date
     tipo: TIPO_MOVIMENTACAO
     descricao: string
-    usuario: Usuario
+    usuario?: UsuarioDTO
 }
 
 export {TIPO_MOVIMENTACAO}
